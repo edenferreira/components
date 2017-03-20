@@ -6,6 +6,8 @@ import './index.css';
 let components = {};
 import Button from './Button';
 components.Button = Button;
+import InputText from './InputText';
+components.InputText = InputText;
 
 ReactDOM.render(
   <App components={components} />,

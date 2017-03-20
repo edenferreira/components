@@ -6,7 +6,7 @@ const Button = ({
 }) => <button onClick={(event) => onClick(event)}>{children}</button>;
 
 Button._props = {
-    onClick: 'function',
+    onClick: 'callback',
     children: 'children',
 };
 

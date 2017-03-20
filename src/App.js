@@ -30,7 +30,7 @@ class App extends Component {
       
       const props = reduce(component._props, (acc, type, prop) => {
         switch (type) {
-        case 'function': return {
+        case 'callback': return {
           ...acc, 
           [prop]: (...args) => console.log(prop, args),
         };
@@ -38,7 +38,7 @@ class App extends Component {
           ...acc,
           [prop]: <span>Children</span>,
         };
-        default: throw new Error('non exhaustive patter of props');
+        default: throw new Error('non exhaustive pattern of props');
         }
       }, {});
       
